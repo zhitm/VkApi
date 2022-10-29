@@ -2,7 +2,7 @@
 using Newtonsoft.Json;
  
 namespace VkApi;
-public class Response
+  public class Response
     {
         public VkJson[] response = new VkJson[1];
  
@@ -21,7 +21,7 @@ public class Response
  
     class VkApiClient
     {
-       private static async Task UsersGet()
+        private static async Task UsersGet()
         {
             var httpClient = new HttpClient();
  
@@ -80,6 +80,7 @@ public class Response
                 {
                     Console.WriteLine("Ошибка чтения данных");
                 }
+                Thread.Sleep(500);
             }
  
             Console.WriteLine("Нажмите <Enter>, чтобы закрыть консоль");
