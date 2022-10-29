@@ -51,7 +51,7 @@ public class Response
             return info.response[0].upload_url;
         }
         
-        private static async Task VkAuthorize()
+        private static async Task VkChangePhoto()
         {
             var form = new MultipartFormDataContent
             {
@@ -86,7 +86,7 @@ public class Response
         }
         private static async Task Main()
         {
-            await VkAuthorize();
+            await VkChangePhoto();
         }
     }
 
